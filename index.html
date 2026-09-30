@@ -15,7 +15,8 @@
   .bouton { display: inline-block; background: #d62828; color: white;
             padding: 15px 30px; border-radius: 8px; font-size: 20px;
             text-decoration: none; }
-</style>
+input, textarea { width: 90%; max-width: 350px; padding: 12px; font-size: 16px; }
+button { background: #d62828; color: white; padding: 15px 30px; border: none; border-radius: 8px; font-size: 18px; }.appel-fixe { position: fixed; bottom: 0; left: 0; right: 0; background: #d62828; color: white; padding: 16px; text-align: center; font-size: 20px; text-decoration: none; }</style>
 </head>
 <body>
 
@@ -61,6 +62,15 @@
   </section>
 <section>
   <h2>Contact</h2>
+  <section>
+  <h2>Demander un devis</h2>
+  <form action="https://formsubmit.co/contact@exemple.fr" method="POST">
+    <p><input type="text" name="nom" placeholder="Votre nom" required></p>
+    <p><input type="tel" name="telephone" placeholder="Votre téléphone" required></p>
+    <p><textarea name="message" placeholder="Votre problème"></textarea></p>
+    <p><button type="submit">Envoyer</button></p>
+  </form>
+  </section>
   <p><a href="mailto:contact@exemple.fr">contact@exemple.fr</a></p>
 </section><footer>
   <p>© 2026 Sarah Plomberie, Lille</p>
